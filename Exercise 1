@@ -1,0 +1,17 @@
+package demotest;
+public class ExerciseThread1 implements Runnable
+{
+       public static void main(String[] args) {
+        Thread timeThread1 = new Thread("11:00");
+        Thread nameThread2 = new Thread("Exercise");
+        timeThread1.start();
+        nameThread2.start();
+        System.out.println("Current time is:");
+        System.out.println(timeThread1.getName());
+        System.out.println("Name of thread is:");
+        System.out.println(nameThread2.getName());
+    }
+    @Override
+    public void run() {
+    }
+}
